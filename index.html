@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIRÉ Parfums — Luxury Fragrance Catalogue</title>
+<style>
+:root{--olive:#3f4a2c;--olive2:#56633a;--black:#090a08;--cream:#f2efe5;--gold:#c8aa68;--muted:#aaa89c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+nav{position:sticky;top:0;z-index:20;background:rgba(9,10,8,.94);backdrop-filter:blur(12px);border-bottom:1px solid #24271e;padding:15px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;letter-spacing:4px}.logo span{display:block;font-size:7px;letter-spacing:2px;color:var(--gold);margin-top:3px}
+nav a{color:var(--cream);text-decoration:none;font-size:12px;margin-left:18px}
+.hero{min-height:82vh;background:linear-gradient(135deg,var(--olive) 0%,#28301c 48%,var(--black) 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;position:relative;overflow:hidden}
+.hero:after{content:"";width:320px;height:320px;border:1px solid rgba(200,170,104,.28);border-radius:50%;position:absolute;right:-100px;bottom:-100px}
+.kicker{color:var(--gold);font-size:11px;letter-spacing:4px;font-weight:700}.hero h1{font-size:clamp(42px,9vw,82px);margin:18px 0 8px;letter-spacing:2px}.hero p{max-width:560px;margin:0 auto 28px;color:#d0cec3;line-height:1.7}
+.btn{display:inline-block;background:var(--gold);color:var(--black);padding:14px 24px;border-radius:3px;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:1px}
+section{padding:70px 6%;max-width:1200px;margin:auto}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}.section-head h2{margin:0;font-size:32px}.section-head p{color:var(--muted);font-size:12px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#11130f;border:1px solid #262a20;border-radius:12px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#4e5739}
+.product-art{height:280px;background:radial-gradient(circle at 50% 35%,#5c6840 0,#303a23 25%,#11130f 62%);display:flex;align-items:center;justify-content:center}
+.bottle{width:95px;height:140px;border-radius:12px 12px 18px 18px;background:linear-gradient(90deg,#20261a,#5c6a3c,#20261a);position:relative;box-shadow:0 18px 35px rgba(0,0,0,.55)}
+.bottle:before{content:"";position:absolute;width:42px;height:34px;background:#151710;left:27px;top:-28px;border-radius:5px 5px 2px 2px}
+.bottle:after{content:"NOIRÉ";position:absolute;left:13px;right:13px;top:55px;padding:14px 4px;background:#eee9dc;color:#111;text-align:center;font-size:10px;font-weight:800;letter-spacing:1px}
+.card-body{padding:20px}.card h3{margin:0 0 8px;font-size:17px}.notes{color:var(--muted);font-size:11px;line-height:1.6}.price{color:var(--gold);font-weight:800;font-size:15px;margin:14px 0}.order{display:block;text-align:center;padding:11px;border:1px solid #4b5435;color:var(--cream);text-decoration:none;border-radius:5px;font-size:11px;font-weight:700}
+.feature{background:var(--olive);border-radius:18px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.feature h2{font-size:38px;margin:0 0 12px}.feature p{color:#d7d8cb;line-height:1.7;font-size:13px}.mini{display:flex;gap:10px;justify-content:center}.mini .bottle{transform:scale(.65);margin:-20px}
+.contact{background:#11130f;text-align:center;border-top:1px solid #25291f;border-bottom:1px solid #25291f}.contact h2{font-size:35px;margin:0 0 12px}.contact p{color:var(--muted);font-size:13px}
+footer{text-align:center;padding:28px 15px;color:#77766d;font-size:9px;letter-spacing:1px}
+@media(max-width:750px){nav a{display:none}.grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr;padding:28px}.section-head{display:block}.section-head p{margin-top:8px}.hero{min-height:75vh}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">NOIRÉ<span>PARFUMS • EAU DE PARFUM</span></div>
+  <div><a href="#collection">Collection</a><a href="#sets">Sets</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="kicker">THE ART OF SCENT</div>
+    <h1>FIND YOUR<br><span style="color:#c8aa68">SIGNATURE.</span></h1>
+    <p>A curated collection of modern fragrances crafted for presence, memory and distinction.</p>
+    <a class="btn" href="#collection">EXPLORE COLLECTION</a>
+  </div>
+</header>
+
+<section id="collection">
+  <div class="section-head"><h2>Signature Collection</h2><p>50ML & 100ML • EAU DE PARFUM</p></div>
+  <div class="grid">
+    <article class="card"><div class="product-art"><div class="bottle"></div></div><div class="card-body"><h3>NOIRÉ OAK</h3><div class="notes">Cedar • Amber • Tonka</div><div class="price">₦38,000</div><a class="order" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20order%20NOIR%C3%89%20OAK." target="_blank">ORDER ON WHATSAPP</a></div></article>
+    <article class="card"><div class="product-art"><div class="bottle"></div></div><div class="card-body"><h3>NOIRÉ MOSS</h3><div class="notes">Moss • Vetiver • Musk</div><div class="price">₦42,000</div><a class="order" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20order%20NOIR%C3%89%20MOSS." target="_blank">ORDER ON WHATSAPP</a></div></article>
+    <article class="card"><div class="product-art"><div class="bottle"></div></div><div class="card-body"><h3>NOIRÉ BLOOM</h3><div class="notes">Jasmine • Rose • Vanilla</div><div class="price">₦45,000</div><a class="order" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20order%20NOIR%C3%89%20BLOOM." target="_blank">ORDER ON WHATSAPP</a></div></article>
+    <article class="card"><div class="product-art"><div class="bottle"></div></div><div class="card-body"><h3>NOIRÉ VERT</h3><div class="notes">Bergamot • Leather • Cedar</div><div class="price">₦48,000</div><a class="order" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20order%20NOIR%C3%89%20VERT." target="_blank">ORDER ON WHATSAPP</a></div></article>
+  </div>
+</section>
+
+<section id="sets">
+  <div class="feature">
+    <div><div class="kicker">DISCOVERY COLLECTION</div><h2>Four scents.<br>One signature.</h2><p>Explore four distinctive fragrances in a premium discovery set. Ideal for gifting or finding your next everyday scent.</p><a class="btn" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20order%20the%20Discovery%20Set." target="_blank">ORDER DISCOVERY SET • ₦20,000</a></div>
+    <div class="mini"><div class="bottle"></div><div class="bottle"></div><div class="bottle"></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Ready to find yours?</h2><p>WhatsApp • Instagram • TikTok</p>
+  <a class="btn" href="https://wa.me/2348000000000?text=Hello%20NOIR%C3%89%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank">CHAT ON WHATSAPP</a>
+</section>
+<footer>NOIRÉ PARFUMS • SAMPLE WEB CATALOGUE • FICTIONAL DEMO CONTENT</footer>
+</body>
+</html>
